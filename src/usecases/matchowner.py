@@ -7,7 +7,7 @@ def matchOwner(certificate_owner, extract):
 
     for results in find:
         if results == certificate_owner:
-            print('correct: ' + results)
+            print('owner_name: approved')
             return True
-    print('incorrect name of owner')
+    print('owner_name: failed')
     return False

@@ -9,7 +9,7 @@ def matchDate(certificate_date, extract):
     result = matches[-1]
 
     if result == certificate_date:
-        print('correct: ' + result)
+        print('date: approved')
         return True
     else:
-        print('incorrect date ' + result + " is different of " + certificate_date)
+        print('date: failed')

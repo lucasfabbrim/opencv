@@ -7,7 +7,7 @@ def matchName(certificate_name, extract):
 
     for results in find:
         if results == certificate_name:
-            print('correct: ' + certificate_name)
+            print('document_name: approved')
             return True
-    print('incorrect name of document!')
+    print('document_name: failed')
     return False

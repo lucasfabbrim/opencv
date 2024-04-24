@@ -6,8 +6,8 @@ def matchContent(extract):
     matches = re.findall(regex, extract, re.IGNORECASE)
 
     if matches:
-        print('have content')
+        print('content: approved')
         return True
     else:
-        print('not have content')
+        print('content: failed')
         return False

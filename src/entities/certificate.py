@@ -12,8 +12,11 @@ class Certificate:
         self.date = date
 
     def hasRight(self, extract):
-        if matchDate(self.date, extract) and matchOwner(self.owner, extract) and matchName(self.name, extract) and matchContent(extract):
-            print('approved')
+        if (matchDate(self.date, extract)
+                and matchOwner(self.owner, extract)
+                and matchName(self.name, extract)
+                and matchContent(extract)):
+            print('certificate: approved')
             return True
-        print('not approved')
+        print('certificate: failed')
         return False
