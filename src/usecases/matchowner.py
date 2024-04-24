@@ -9,5 +9,5 @@ def matchOwner(certificate_owner, extract):
         if results == certificate_owner:
             print('correct: ' + results)
             return True
-    print('incorrect owner: ' + regex)
+    print('incorrect name of owner')
     return False
